@@ -41,7 +41,7 @@ def main():
         col3, col4 = st.columns([3, 7])
 
         with col3:
-            st.subheader("Podcast Guest1")
+            st.subheader("Podcast Guest")
             print(podcast_info)
             if 'podcast_guest' in podcast_info:
               st.write(podcast_info['podcast_guest'])
@@ -49,7 +49,7 @@ def main():
         with col4:
             st.subheader("Podcast Guest Details")
             if 'podcast_guest' in podcast_info:
-              st.write(podcast_info["podcast_guest"]['summary'])
+              st.write(podcast_info["podcast_guest"])
 
         # Display the five key moments
         st.subheader("Key Moments")
