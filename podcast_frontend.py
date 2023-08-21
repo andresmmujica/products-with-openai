@@ -42,6 +42,7 @@ def main():
 
         with col3:
             st.subheader("Podcast Guest")
+            print(podcast_info)
             if 'podcast_guest' in podcast_info:
               st.write(podcast_info['podcast_guest']['name'])
 
